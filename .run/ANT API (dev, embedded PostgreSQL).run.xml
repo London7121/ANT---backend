@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ANT API (dev, embedded PostgreSQL)" type="Application" factoryName="Application">
+    <envs>
+      <env name="IMPORT_JSON" value="legacy-node/data/db.json" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="uz.ant.api.dev.DevApplication" />
+    <module name="ant-api" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>4.1.2</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>uz.ant</groupId>
+  <artifactId>ant-api</artifactId>
+  <version>1.0.0</version>
+  <name>ANT API</name>
+  <description>ANT landing + admin panel backend (Spring Boot + PostgreSQL)</description>
+
+  <properties>
+    <java.version>25</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <springdoc.version>3.2.0</springdoc.version>
+    <bouncycastle.version>1.87</bouncycastle.version>
+    <thumbnailator.version>0.4.21</thumbnailator.version>
+    <webp.version>0.11.0</webp.version>
+    <awssdk.version>2.31.50</awssdk.version>
+    <embedded-pg.version>2.2.2</embedded-pg.version>
+    <embedded-pg-binaries.version>18.6.0</embedded-pg-binaries.version>
+  </properties>
+
+  <dependencies>
+    <!-- Web + JSON -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webmvc</artifactId>
+    </dependency>
+    <!-- JDBC (JdbcClient) + HikariCP -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    <!-- Migratsiyalar -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-flyway</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-postgresql</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- Swagger UI: /api/docs -->
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>${springdoc.version}</version>
+    </dependency>
+    <!-- scrypt (eski Node parol xeshlari bilan mos) -->
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>${bouncycastle.version}</version>
+    </dependency>
+    <!-- Rasm: o'lcham o'zgartirish (EXIF bilan) + WebP -->
+    <dependency>
+      <groupId>net.coobird</groupId>
+      <artifactId>thumbnailator</artifactId>
+      <version>${thumbnailator.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.usefulness</groupId>
+      <artifactId>webp-imageio</artifactId>
+      <version>${webp.version}</version>
+    </dependency>
+
+    <!-- Fayllar bulutda (S3 mos: AWS S3, Cloudflare R2, Supabase Storage) -->
+    <dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>s3</artifactId>
+      <version>${awssdk.version}</version>
+    </dependency>
+
+    <!-- Test va lokal ishlab chiqish: o'rnatilgan PostgreSQL (Docker/o'rnatish shart emas) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webmvc-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.zonky.test</groupId>
+      <artifactId>embedded-postgres</artifactId>
+      <version>${embedded-pg.version}</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion><groupId>io.zonky.test.postgres</groupId><artifactId>embedded-postgres-binaries-windows-amd64</artifactId></exclusion>
+        <exclusion><groupId>io.zonky.test.postgres</groupId><artifactId>embedded-postgres-binaries-linux-amd64-alpine</artifactId></exclusion>
+        <exclusion><groupId>io.zonky.test.postgres</groupId><artifactId>embedded-postgres-binaries-darwin-amd64</artifactId></exclusion>
+        <exclusion><groupId>io.zonky.test.postgres</groupId><artifactId>embedded-postgres-binaries-linux-amd64</artifactId></exclusion>
+        <exclusion><groupId>org.flywaydb</groupId><artifactId>flyway-core</artifactId></exclusion>
+        <exclusion><groupId>org.liquibase</groupId><artifactId>liquibase-core</artifactId></exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.zonky.test.postgres</groupId>
+      <artifactId>embedded-postgres-binaries-darwin-arm64v8</artifactId>
+      <version>${embedded-pg-binaries.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.zonky.test.postgres</groupId>
+      <artifactId>embedded-postgres-binaries-darwin-amd64</artifactId>
+      <version>${embedded-pg-binaries.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.zonky.test.postgres</groupId>
+      <artifactId>embedded-postgres-binaries-linux-amd64</artifactId>
+      <version>${embedded-pg-binaries.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.zonky.test.postgres</groupId>
+      <artifactId>embedded-postgres-binaries-linux-arm64v8</artifactId>
+      <version>${embedded-pg-binaries.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>ant-api</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

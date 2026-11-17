@@ -1,0 +1,10 @@
+{
+  "staffToken": "eyJrIjoic3RhZmYiLCJpZCI6MSwiZXhwIjo0MTAyNDQ0ODAwMDAwfQ.r7Bu7EB36jojBXx6WSALd0HoeouDmUhuSFw-w_XpWAY",
+  "userToken": "eyJrIjoidXNlciIsImlkIjo0LCJleHAiOjQxMDI0NDQ4MDAwMDB9.FFZ2EmEHSbrbpD2eqQIDNhfQf4XrEew8dAfoMoq0J3I",
+  "workerToken": "eyJrIjoic3RhZmYiLCJpZCI6MywiZXhwIjo0MTAyNDQ0ODAwMDAwfQ.PGGp2IcZBA-mDKvhNyhIwjTPim5RTNTs-bjOrANYFZo",
+  "hashVector": {
+    "salt": "0123456789abcdef0123456789abcdef",
+    "password": "päss-уз-123",
+    "stored": "0123456789abcdef0123456789abcdef:274b9c6d131cd9508c5fcdc5d8f61b116a8d9a42427ca7a3da19895d90cde91ff900b7213ebe81e367e6edda997aba456bcf211f9ed2cc45d869bdb2a153e684"
+  }
+}

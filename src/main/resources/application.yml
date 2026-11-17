@@ -1,0 +1,62 @@
+# Barcha sozlamalar muhit o'zgaruvchilari bilan o'zgaradi (ANT/README.md dagi jadvalga qarang).
+server:
+  port: ${PORT:3001}
+  shutdown: graceful
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: ant-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/ant}
+    username: ${DB_USER:ant}
+    password: ${DB_PASSWORD:ant}
+  servlet:
+    multipart:
+      max-file-size: 300MB      # video 300 MB gacha
+      max-request-size: 310MB
+  flyway:
+    enabled: true
+  mvc:
+    problemdetails:
+      enabled: false
+
+ant:
+  admin-user: ${ADMIN_USER:admin}
+  # Birinchi ishga tushirishda xodim paroli (bo'sh bo'lsa: admin123 — darhol almashtiring!)
+  admin-password: ${ADMIN_PASSWORD:}
+  # Yuklangan fayllar (uploads/) va dev bazasi (pg/) shu papkada
+  data-dir: ${DATA_DIR:./data}
+  # Production'da shu papkadagi build qilingan sayt ham beriladi
+  frontend-dist: ${FRONTEND_DIST:../ant-frontend/dist}
+  rate-limit-enabled: ${RATE_LIMIT:true}
+  # Reverse proxy ortida (nginx, Vercel...) X-Forwarded-For dagi oxirgi manzil mijoz IP'si hisoblanadi
+  trust-proxy: ${TRUST_PROXY:true}
+  # Kun chegaralari (hisobotlar, "bugungi" hujjatlar) shu vaqt zonasi bo'yicha
+  timezone: ${TIMEZONE:Asia/Tashkent}
+  # Rasm/video ombori: local (data/uploads) yoki s3 (AWS S3 / Cloudflare R2 / Supabase Storage)
+  storage:
+    type: ${STORAGE_TYPE:local}
+    bucket: ${S3_BUCKET:}
+    region: ${S3_REGION:auto}
+    endpoint: ${S3_ENDPOINT:}          # R2/Supabase uchun to'ldiriladi; AWS S3 da bo'sh qoldiriladi
+    access-key: ${S3_ACCESS_KEY:}
+    secret-key: ${S3_SECRET_KEY:}
+    public-url: ${S3_PUBLIC_URL:}      # fayllar ochiladigan ommaviy manzil (CDN / public bucket), oxirida "/" siz
+  # Eski Node versiyasining db.json faylini birinchi ishga tushirishda import qilish uchun yo'l
+  import-json: ${IMPORT_JSON:}
+
+springdoc:
+  api-docs:
+    path: /api/docs/openapi.json
+    enabled: ${DOCS_ENABLED:true}
+  swagger-ui:
+    path: /api/docs
+    enabled: ${DOCS_ENABLED:true}
+    persist-authorization: true
+
+logging:
+  level:
+    org.flywaydb: info

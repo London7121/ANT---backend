@@ -1,0 +1,519 @@
+{
+  "settings": {
+    "brand": {
+      "name": "ANT"
+    },
+    "theme": {
+      "accent": "#B59E67",
+      "accentDark": "#C9B27C"
+    },
+    "seo": {
+      "siteUrl": "https://ant.uz",
+      "title": {
+        "uz": "ANT — brend sahifasi",
+        "ru": "ANT — страница бренда",
+        "en": "ANT — brand page"
+      },
+      "description": {
+        "uz": "ANT — zamonaviy brend: yangi kolleksiyalar, video, foto va yangiliklar.",
+        "ru": "ANT — современный бренд: новые коллекции, видео, фото и новости.",
+        "en": "ANT — a modern brand: new collections, video, photos and news."
+      }
+    },
+    "sections": [
+      {
+        "key": "hero",
+        "visible": true
+      },
+      {
+        "key": "marquee",
+        "visible": true
+      },
+      {
+        "key": "stats",
+        "visible": true
+      },
+      {
+        "key": "products",
+        "visible": true
+      },
+      {
+        "key": "promo",
+        "visible": true
+      },
+      {
+        "key": "feed",
+        "visible": true
+      },
+      {
+        "key": "news",
+        "visible": true
+      },
+      {
+        "key": "reviews",
+        "visible": true
+      },
+      {
+        "key": "contact",
+        "visible": true
+      }
+    ],
+    "hero": {
+      "slideMs": 5500
+    },
+    "promo": {
+      "href": "#contact"
+    },
+    "phone": "+998 90 000 00 00",
+    "email": "info@ant.uz",
+    "telegram": "https://t.me/ant",
+    "instagram": "https://instagram.com/ant",
+    "address": {
+      "uz": "Toshkent, namuna ko‘chasi 1",
+      "ru": "Ташкент, ул. Образцовая 1",
+      "en": "Tashkent, Sample street 1"
+    },
+    "hours": {
+      "uz": "Du–Sha 09:00–20:00",
+      "ru": "Пн–Сб 09:00–20:00",
+      "en": "Mon–Sat 09:00–20:00"
+    },
+    "rating": 4.9,
+    "reviewsCount": 1280,
+    "stats": {
+      "clients": 12000,
+      "products": 340,
+      "years": 8,
+      "cities": 14
+    }
+  },
+  "banners": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/seed/ant-banner-1/1400/900.webp",
+      "accent": "#B59E67",
+      "title": {
+        "uz": "Bahor kolleksiyasi",
+        "ru": "Весенняя коллекция",
+        "en": "Spring collection"
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/seed/ant-banner-2/1400/900.webp",
+      "accent": "#7d9a86",
+      "title": {
+        "uz": "Premium liniya",
+        "ru": "Премиум линия",
+        "en": "Premium line"
+      },
+      "visible": true
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/seed/ant-banner-3/1400/900.webp",
+      "accent": "#c98f6b",
+      "title": {
+        "uz": "Chegirmalar -30%",
+        "ru": "Скидки -30%",
+        "en": "Sale -30%"
+      },
+      "visible": true
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": {
+        "uz": "Klassik palto",
+        "ru": "Классическое пальто",
+        "en": "Classic coat"
+      },
+      "description": {
+        "uz": "Sifatli jun aralashmasidan tikilgan klassik palto. Sovuq mavsum uchun qulay va oqlangan ko‘rinish beradi.",
+        "ru": "Классическое пальто из качественной шерстяной смеси. Комфортно в холода и выглядит элегантно.",
+        "en": "A classic coat made of a quality wool blend. Comfortable in the cold and elegant to look at."
+      },
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "colors": [
+        "#B59E67",
+        "#1C1A17"
+      ],
+      "isNew": true,
+      "visible": true,
+      "image": "https://picsum.photos/seed/ant-p1/600/760.webp",
+      "images": [
+        "https://picsum.photos/seed/ant-p1/900/1100.webp",
+        "https://picsum.photos/seed/ant-p1b/900/1100.webp",
+        "https://picsum.photos/seed/ant-p1c/900/1100.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": {
+        "uz": "Oversayz ko‘ylak",
+        "ru": "Рубашка оверсайз",
+        "en": "Oversize shirt"
+      },
+      "description": {
+        "uz": "Erkin kesimdagi paxtali ko‘ylak. Har kuni kiyish uchun mos.",
+        "ru": "Хлопковая рубашка свободного кроя. Подходит для ежедневной носки.",
+        "en": "A relaxed-fit cotton shirt, made for everyday wear."
+      },
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "colors": [
+        "#F3EDE1",
+        "#2F4A3A"
+      ],
+      "isNew": true,
+      "visible": true,
+      "image": "https://picsum.photos/seed/ant-p2/600/760.webp",
+      "images": [
+        "https://picsum.photos/seed/ant-p2/900/1100.webp",
+        "https://picsum.photos/seed/ant-p2b/900/1100.webp",
+        "https://picsum.photos/seed/ant-p2c/900/1100.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "name": {
+        "uz": "Charm kurtka",
+        "ru": "Кожаная куртка",
+        "en": "Leather jacket"
+      },
+      "description": {
+        "uz": "Haqiqiy charmdan tikilgan kurtka. Vaqt o‘tgan sari yanada chiroyli bo‘ladi.",
+        "ru": "Куртка из натуральной кожи. Со временем становится только лучше.",
+        "en": "A jacket made of genuine leather that only gets better with time."
+      },
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "colors": [
+        "#8b6b3d",
+        "#1C1A17"
+      ],
+      "isNew": false,
+      "visible": true,
+      "image": "https://picsum.photos/seed/ant-p3/600/760.webp",
+      "images": [
+        "https://picsum.photos/seed/ant-p3/900/1100.webp",
+        "https://picsum.photos/seed/ant-p3b/900/1100.webp",
+        "https://picsum.photos/seed/ant-p3c/900/1100.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "name": {
+        "uz": "Sport kostyum",
+        "ru": "Спортивный костюм",
+        "en": "Tracksuit"
+      },
+      "description": {
+        "uz": "Yumshoq va nafas oluvchi matodan tikilgan sport kostyum.",
+        "ru": "Спортивный костюм из мягкой дышащей ткани.",
+        "en": "A tracksuit made of soft, breathable fabric."
+      },
+      "sizes": [
+        "XXS",
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "colors": [
+        "#5E574B",
+        "#B59E67"
+      ],
+      "isNew": true,
+      "visible": true,
+      "image": "https://picsum.photos/seed/ant-p4/600/760.webp",
+      "images": [
+        "https://picsum.photos/seed/ant-p4/900/1100.webp",
+        "https://picsum.photos/seed/ant-p4b/900/1100.webp",
+        "https://picsum.photos/seed/ant-p4c/900/1100.webp"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "type": "video",
+      "title": {
+        "uz": "Kolleksiya taqdimoti",
+        "ru": "Презентация коллекции",
+        "en": "Collection reveal"
+      },
+      "image": "https://picsum.photos/seed/ant-v1/800/450.webp",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "height": 260,
+      "date": "2026-11-08",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "type": "photo",
+      "title": {
+        "uz": "Studiya suratlari",
+        "ru": "Фото из студии",
+        "en": "Studio shots"
+      },
+      "image": "https://picsum.photos/seed/ant-f1/600/800.webp",
+      "height": 380,
+      "date": "2026-11-07",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "type": "post",
+      "title": {
+        "uz": "Bugungi kayfiyat",
+        "ru": "Настроение дня",
+        "en": "Mood of the day"
+      },
+      "text": {
+        "uz": "Yangi mavsum — yangi imkoniyatlar. Biz bilan qoling!",
+        "ru": "Новый сезон — новые возможности. Оставайтесь с нами!",
+        "en": "New season, new opportunities. Stay with us!"
+      },
+      "image": "",
+      "height": 190,
+      "date": "2026-11-06",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "type": "photo",
+      "title": {
+        "uz": "Ko‘cha uslubi",
+        "ru": "Уличный стиль",
+        "en": "Street style"
+      },
+      "image": "https://picsum.photos/seed/ant-f2/600/600.webp",
+      "height": 300,
+      "date": "2026-11-05",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "type": "video",
+      "title": {
+        "uz": "Sahna ortida",
+        "ru": "За кулисами",
+        "en": "Behind the scenes"
+      },
+      "image": "https://picsum.photos/seed/ant-v2/800/450.webp",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "height": 260,
+      "date": "2026-11-04",
+      "visible": true
+    },
+    {
+      "id": 6,
+      "type": "post",
+      "title": {
+        "uz": "Maslahat",
+        "ru": "Совет",
+        "en": "Tip"
+      },
+      "text": {
+        "uz": "Ranglarni uyg‘unlashtirishda 3 qoidani unutmang.",
+        "ru": "Не забывайте 3 правила сочетания цветов.",
+        "en": "Remember the 3 rules of colour matching."
+      },
+      "image": "",
+      "height": 190,
+      "date": "2026-11-03",
+      "visible": true
+    },
+    {
+      "id": 7,
+      "type": "photo",
+      "title": {
+        "uz": "Aksessuarlar",
+        "ru": "Аксессуары",
+        "en": "Accessories"
+      },
+      "image": "https://picsum.photos/seed/ant-f3/600/750.webp",
+      "height": 360,
+      "date": "2026-11-02",
+      "visible": true
+    },
+    {
+      "id": 8,
+      "type": "photo",
+      "title": {
+        "uz": "Detallar",
+        "ru": "Детали",
+        "en": "Details"
+      },
+      "image": "https://picsum.photos/seed/ant-f4/600/500.webp",
+      "height": 250,
+      "date": "2026-11-01",
+      "visible": true
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": {
+        "uz": "Yangi do‘kon ochildi",
+        "ru": "Открылся новый магазин",
+        "en": "New store opened"
+      },
+      "text": {
+        "uz": "Samarqandda yangi filialimiz o‘z eshiklarini ochdi.",
+        "ru": "В Самарканде открылся наш новый филиал.",
+        "en": "Our new branch has opened in Samarkand."
+      },
+      "body": {
+        "uz": "Samarqandda yangi filialimiz o‘z eshiklarini ochdi. Yangi do‘kon shahar markazida joylashgan bo‘lib, butun kolleksiyamizni bir joyda taqdim etadi.\n\nIlk haftada barcha mijozlar uchun maxsus takliflar tayyorlangan. Sizni kutib qolamiz!",
+        "ru": "В Самарканде открылся наш новый филиал. Магазин находится в центре города и представляет всю коллекцию в одном месте.\n\nВ первую неделю для всех клиентов подготовлены специальные предложения. Ждём вас!",
+        "en": "Our new branch has opened in Samarkand. The store is in the city centre and presents the whole collection in one place.\n\nSpecial offers are prepared for all customers during the first week. We look forward to seeing you!"
+      },
+      "date": "2026-11-09",
+      "image": "https://picsum.photos/seed/ant-n1/500/360.webp",
+      "gallery": [
+        "https://picsum.photos/seed/ant-n1/1600/900.webp",
+        "https://picsum.photos/seed/ant-n1b/1600/900.webp",
+        "https://picsum.photos/seed/ant-n1c/1600/900.webp"
+      ],
+      "visible": true
+    },
+    {
+      "id": 2,
+      "title": {
+        "uz": "Qishki kolleksiya",
+        "ru": "Зимняя коллекция",
+        "en": "Winter collection"
+      },
+      "text": {
+        "uz": "Issiq va zamonaviy kiyimlar katalogi yangilandi.",
+        "ru": "Каталог тёплой и модной одежды обновлён.",
+        "en": "The warm and modern catalogue is updated."
+      },
+      "body": {
+        "uz": "Issiq va zamonaviy kiyimlar katalogi yangilandi. Yangi kolleksiyada paltolar, kurtkalar va yumshoq trikotaj mavjud.\n\nBarcha modellar 10 xil o‘lchamda taqdim etiladi.",
+        "ru": "Каталог тёплой и модной одежды обновлён. В новой коллекции пальто, куртки и мягкий трикотаж.\n\nВсе модели доступны в 10 размерах.",
+        "en": "The warm and modern catalogue is updated. The new collection includes coats, jackets and soft knitwear.\n\nAll models are available in 10 sizes."
+      },
+      "date": "2026-11-05",
+      "image": "https://picsum.photos/seed/ant-n2/500/360.webp",
+      "gallery": [
+        "https://picsum.photos/seed/ant-n2/1600/900.webp",
+        "https://picsum.photos/seed/ant-n2b/1600/900.webp",
+        "https://picsum.photos/seed/ant-n2c/1600/900.webp"
+      ],
+      "visible": true
+    },
+    {
+      "id": 3,
+      "title": {
+        "uz": "Yetkazib berish kengaydi",
+        "ru": "Расширена доставка",
+        "en": "Delivery expanded"
+      },
+      "text": {
+        "uz": "Endi 14 ta shaharga yetkazib beramiz.",
+        "ru": "Теперь доставляем в 14 городов.",
+        "en": "We now deliver to 14 cities."
+      },
+      "body": {
+        "uz": "Endi 14 ta shaharga yetkazib beramiz. Buyurtmalar o‘rtacha 2–3 kun ichida manzilga yetib boradi.\n\nYetkazib berish holatini operatorlarimiz orqali kuzatib borishingiz mumkin.",
+        "ru": "Теперь доставляем в 14 городов. Заказы приходят в среднем за 2–3 дня.\n\nСтатус доставки можно уточнить у наших операторов.",
+        "en": "We now deliver to 14 cities. Orders arrive in 2–3 days on average.\n\nYou can track the delivery status through our operators."
+      },
+      "date": "2026-10-28",
+      "image": "https://picsum.photos/seed/ant-n3/500/360.webp",
+      "gallery": [
+        "https://picsum.photos/seed/ant-n3/1600/900.webp",
+        "https://picsum.photos/seed/ant-n3b/1600/900.webp",
+        "https://picsum.photos/seed/ant-n3c/1600/900.webp"
+      ],
+      "visible": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Aziza K.",
+      "rating": 5,
+      "text": {
+        "uz": "Sifat a’lo, yetkazib berish juda tez!",
+        "ru": "Отличное качество, очень быстрая доставка!",
+        "en": "Great quality and very fast delivery!"
+      },
+      "avatar": "https://picsum.photos/seed/ant-a1/96/96.webp",
+      "visible": true,
+      "createdAt": "2026-11-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Timur R.",
+      "rating": 5,
+      "text": {
+        "uz": "Dizayn menga juda yoqdi, tavsiya qilaman.",
+        "ru": "Дизайн очень понравился, рекомендую.",
+        "en": "Loved the design, highly recommend."
+      },
+      "avatar": "https://picsum.photos/seed/ant-a2/96/96.webp",
+      "visible": true,
+      "createdAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Dilnoza M.",
+      "rating": 4,
+      "text": {
+        "uz": "Narx va sifat muvozanati yaxshi.",
+        "ru": "Хорошее соотношение цены и качества.",
+        "en": "Nice balance of price and quality."
+      },
+      "avatar": "https://picsum.photos/seed/ant-a3/96/96.webp",
+      "visible": true,
+      "createdAt": "2026-11-03T10:00:00.000Z"
+    }
+  ],
+  "translations": {
+    "uz": {},
+    "ru": {},
+    "en": {}
+  }
+}

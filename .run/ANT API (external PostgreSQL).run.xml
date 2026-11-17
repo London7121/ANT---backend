@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ANT API (external PostgreSQL)" type="Application" factoryName="Application">
+    <!-- Production kabi: tashqi PostgreSQL'ga ulanadi. Qiymatlarni o'zingizniki bilan almashtiring. -->
+    <envs>
+      <env name="DB_URL" value="jdbc:postgresql://localhost:5432/ant" />
+      <env name="DB_USER" value="ant" />
+      <env name="DB_PASSWORD" value="ant" />
+      <env name="ADMIN_PASSWORD" value="o'zgartiring-123" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="uz.ant.api.AntApplication" />
+    <module name="ant-api" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

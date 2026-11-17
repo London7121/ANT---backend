@@ -1,0 +1,329 @@
+{
+  "settings": {
+    "brand": {
+      "name": "Legacy Brand"
+    },
+    "phone": "+998 90 111 22 33"
+  },
+  "banners": [
+    {
+      "id": 7,
+      "image": "",
+      "accent": "#fff",
+      "title": {
+        "uz": "B",
+        "ru": "B",
+        "en": "B"
+      },
+      "visible": true
+    }
+  ],
+  "products": [
+    {
+      "id": 5,
+      "name": {
+        "uz": "Palto",
+        "ru": "Palto",
+        "en": "Palto"
+      },
+      "description": {
+        "uz": "",
+        "ru": "",
+        "en": ""
+      },
+      "sizes": [],
+      "colors": [],
+      "image": "",
+      "images": [],
+      "isNew": false,
+      "visible": true
+    },
+    {
+      "id": 9,
+      "name": {
+        "uz": "Koʻlak",
+        "ru": "Koʻlak",
+        "en": "Koʻlak"
+      },
+      "description": {
+        "uz": "",
+        "ru": "",
+        "en": ""
+      },
+      "sizes": [],
+      "colors": [],
+      "image": "",
+      "images": [],
+      "isNew": true,
+      "visible": false
+    }
+  ],
+  "posts": [],
+  "news": [],
+  "reviews": [
+    {
+      "id": 3,
+      "name": "kamol",
+      "rating": 5,
+      "text": {
+        "uz": "zoʻr",
+        "ru": "zoʻr",
+        "en": "zoʻr"
+      },
+      "visible": true,
+      "userId": 4,
+      "createdAt": "2026-11-01T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Demo",
+      "rating": 3,
+      "text": {
+        "uz": "ok",
+        "ru": "ok",
+        "en": "ok"
+      },
+      "visible": true,
+      "createdAt": "2026-11-02T10:00:00.000Z"
+    }
+  ],
+  "translations": {
+    "uz": {
+      "hero.title": "Salom"
+    },
+    "ru": {},
+    "en": {}
+  },
+  "media": [
+    {
+      "id": 2,
+      "type": "image",
+      "name": "a.png",
+      "url": "/uploads/a.png",
+      "size": 1234,
+      "createdAt": "2026-11-01T10:00:00.000Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": 6,
+      "name": "Ali",
+      "phone": "+998901234567",
+      "message": "Hi",
+      "read": false,
+      "createdAt": "2026-11-03T10:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 4,
+      "username": "Kamol",
+      "hash": "fecc2553b630d63068ca24cf6e46b2c2:b109c4021c1e3d79922ddd7a6d965e4c321c443069e4b543f29091544831b71133967b6015bdd6e63411aa81ba141d903ccc839224be4b5f9421eaae452ff76b",
+      "createdAt": "2026-11-01T09:00:00.000Z",
+      "blocked": false,
+      "favorites": [
+        5,
+        9
+      ]
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "username": "admin",
+      "name": "Super admin",
+      "role": "SUPER_ADMIN",
+      "grant": [],
+      "revoke": [],
+      "active": true,
+      "hash": "937d00127b25413814d314cb68735125:0411288309b7a4675e87f3e788de14739490e0f18fae0ce03b666a5916269b822e5d302137934860c0cb6deac49dc86a34166d533e87a0a3cf9d342b93e347b0",
+      "createdAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "username": "sklad",
+      "name": "Omborchi",
+      "role": "SKLAD_WORKER",
+      "grant": [
+        "finance.view"
+      ],
+      "revoke": [],
+      "active": true,
+      "hash": "f5f1b70d5f45d3cf0701697b2b1794a0:a6f12a03408b35c428fd914c3835d08c9c79ed41bb1c289b4768ff3cd2dbe9498c9f434a65b35006d6aa130c24b20121557cedfeb40a5c33cfee75034d0d5219",
+      "createdAt": "2026-11-01T08:30:00.000Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": 1,
+      "name": "Asosiy ombor",
+      "address": "",
+      "note": "",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Filial",
+      "address": "Samarqand",
+      "note": "",
+      "active": true
+    }
+  ],
+  "suppliers": [
+    {
+      "id": 8,
+      "name": "Yetkazuvchi",
+      "phone": "+998",
+      "address": "",
+      "note": "",
+      "active": true
+    }
+  ],
+  "catalog": [
+    {
+      "id": 11,
+      "sku": "SKU-1",
+      "name": "Mato",
+      "category": "Mato",
+      "unit": "m",
+      "barcodes": [
+        "4780000000011",
+        "ABC-1234"
+      ],
+      "cost": 12.345,
+      "price": 20,
+      "minStock": 5,
+      "image": "",
+      "note": "",
+      "active": true,
+      "createdAt": "2026-11-02T08:00:00.000Z"
+    }
+  ],
+  "movements": [
+    {
+      "id": 21,
+      "number": "KR-00001",
+      "type": "RECEIPT",
+      "date": "2026-11-02",
+      "warehouseId": 1,
+      "supplierId": 8,
+      "counterparty": "",
+      "reason": "",
+      "lines": [
+        {
+          "itemId": 11,
+          "qty": 100,
+          "price": 12.345
+        }
+      ],
+      "note": "",
+      "status": "posted",
+      "createdBy": {
+        "id": 1,
+        "name": "Super admin"
+      },
+      "createdAt": "2026-11-02T09:00:00.000Z"
+    },
+    {
+      "id": 22,
+      "number": "CH-00001",
+      "type": "ISSUE",
+      "date": "2026-11-03",
+      "warehouseId": 1,
+      "counterparty": "Mijoz",
+      "reason": "sale",
+      "lines": [
+        {
+          "itemId": 11,
+          "qty": 30,
+          "price": 12.345
+        }
+      ],
+      "note": "",
+      "status": "posted",
+      "createdBy": {
+        "id": 3,
+        "name": "Omborchi"
+      },
+      "createdAt": "2026-11-03T09:00:00.000Z"
+    },
+    {
+      "id": 23,
+      "number": "KO-00001",
+      "type": "TRANSFER",
+      "date": "2026-11-04",
+      "warehouseId": 1,
+      "toWarehouseId": 2,
+      "counterparty": "",
+      "reason": "",
+      "lines": [
+        {
+          "itemId": 11,
+          "qty": 10,
+          "price": 12.345
+        }
+      ],
+      "note": "",
+      "status": "posted",
+      "createdBy": {
+        "id": 3,
+        "name": "Omborchi"
+      },
+      "createdAt": "2026-11-04T09:00:00.000Z"
+    },
+    {
+      "id": 24,
+      "number": "KR-00002",
+      "type": "RECEIPT",
+      "date": "2026-11-05",
+      "warehouseId": 1,
+      "supplierId": 8,
+      "counterparty": "",
+      "reason": "",
+      "lines": [
+        {
+          "itemId": 11,
+          "qty": 5,
+          "price": 12.345
+        }
+      ],
+      "note": "",
+      "status": "cancelled",
+      "createdBy": {
+        "id": 1,
+        "name": "Super admin"
+      },
+      "createdAt": "2026-11-05T09:00:00.000Z",
+      "cancelledBy": {
+        "id": 1,
+        "name": "Super admin"
+      },
+      "cancelledAt": "2026-11-05T10:00:00.000Z",
+      "cancelReason": "xato"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 31,
+      "date": "2026-11-06",
+      "type": "expense",
+      "category": "supplier_payment",
+      "amount": 500,
+      "method": "cash",
+      "counterparty": "Yetkazuvchi",
+      "supplierId": 8,
+      "note": "",
+      "createdBy": {
+        "id": 1,
+        "name": "Super admin"
+      },
+      "createdAt": "2026-11-06T09:00:00.000Z"
+    }
+  ],
+  "counters": {
+    "RECEIPT": 2,
+    "ISSUE": 1,
+    "TRANSFER": 1
+  },
+  "secret": "legacy-secret-0123456789abcdef0123456789abcdef0123456789abcdef01234567"
+}
